@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebles Keyda - Catálogo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-beige">
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgs/logo.png" alt="Logo Muebles Keyda" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cotizaciones.html">Cotizaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="descarga.html">Descarga</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <h1 class="text-primario fw-bold mb-4 text-center">Nuestro Catálogo</h1>
+            
+            <!-- Filters -->
+            <ul class="nav nav-pills justify-content-center mb-5 catalog-nav gap-2">
+                <li class="nav-item">
+                    <a class="nav-link active filter-btn" data-filter="todos">Todos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="mesas">Mesas</a></li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="sillas">Sillas</a></li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="libreros">Libreros</a></li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="closets">Closets</a></li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="cocina">Cocina</a></li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="bano">Baño</a></li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="sala">Sala</a></li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="escritorios">Escritorios</a></li>
+                <li class="nav-item"><a class="nav-link filter-btn" data-filter="personalizados">Personalizados</a></li>
+            </ul>
+
+            <!-- Catalog Grid -->
+            <div class="row g-4" id="catalog-container">
+                <!-- MESAS -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="mesas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mesas/m1.png" class="card-img-top img-cover rounded-top" alt="Mesa de comedor rústica en madera maciza" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mesa de comedor rústica en madera maciza</h5>
+                            <span class="product-label d-inline-block mt-2">Mesas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="mesas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mesas/m2.png" class="card-img-top img-cover rounded-top" alt="Mesa de centro moderna para sala de estar" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mesa de centro moderna para sala de estar</h5>
+                            <span class="product-label d-inline-block mt-2">Mesas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="mesas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mesas/m3.png" class="card-img-top img-cover rounded-top" alt="Consola clásica de madera para recibidor" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Consola clásica de madera para recibidor</h5>
+                            <span class="product-label d-inline-block mt-2">Mesas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="mesas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mesas/m4.png" class="card-img-top img-cover rounded-top" alt="Mesa de comedor vintage con sillas a juego" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mesa de comedor vintage con sillas a juego</h5>
+                            <span class="product-label d-inline-block mt-2">Mesas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="mesas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mesas/m5.png" class="card-img-top img-cover rounded-top" alt="Mesa de comedor amplia en madera oscura" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mesa de comedor amplia en madera oscura</h5>
+                            <span class="product-label d-inline-block mt-2">Mesas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="mesas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mesas/m6.png" class="card-img-top img-cover rounded-top" alt="Mesa de centro redonda en madera natural" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mesa de centro redonda en madera natural</h5>
+                            <span class="product-label d-inline-block mt-2">Mesas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SILLAS -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sillas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/sillas/s1.png" class="card-img-top img-cover rounded-top" alt="Silla de exterior en madera clara" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Silla de exterior en madera clara</h5>
+                            <span class="product-label d-inline-block mt-2">Sillas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sillas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/sillas/s2.png" class="card-img-top img-cover rounded-top" alt="Silla de exterior en madera" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Silla de exterior en madera</h5>
+                            <span class="product-label d-inline-block mt-2">Sillas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sillas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/sillas/s3.png" class="card-img-top img-cover rounded-top" alt="Silla de comedor de madera" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Silla de comedor de madera</h5>
+                            <span class="product-label d-inline-block mt-2">Sillas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sillas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/sillas/s4.png" class="card-img-top img-cover rounded-top" alt="Sillón tapizado gris" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Sillón tapizado gris</h5>
+                            <span class="product-label d-inline-block mt-2">Sillas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sillas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/sillas/s5.png" class="card-img-top img-cover rounded-top" alt="Silla de madera decorativa" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Silla de madera decorativa</h5>
+                            <span class="product-label d-inline-block mt-2">Sillas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sillas">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/sillas/s6.png" class="card-img-top img-cover rounded-top" alt="Sillón gris con brazos de madera" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Sillón gris con brazos de madera</h5>
+                            <span class="product-label d-inline-block mt-2">Sillas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LIBREROS -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="libreros">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/libreros/lib1.png" class="card-img-top img-cover rounded-top" alt="Librero de diseño geométrico" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Librero de diseño geométrico</h5>
+                            <span class="product-label d-inline-block mt-2">Libreros</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="libreros">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/libreros/lib2.png" class="card-img-top img-cover rounded-top" alt="Librero de madera clara" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Librero de madera clara</h5>
+                            <span class="product-label d-inline-block mt-2">Libreros</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="libreros">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/libreros/lib3.png" class="card-img-top img-cover rounded-top" alt="Librero infantil" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Librero infantil</h5>
+                            <span class="product-label d-inline-block mt-2">Libreros</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="libreros">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/libreros/lib4.png" class="card-img-top img-cover rounded-top" alt="Estantería vertical" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Estantería vertical</h5>
+                            <span class="product-label d-inline-block mt-2">Libreros</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="libreros">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/libreros/lib5.png" class="card-img-top img-cover rounded-top" alt="Librero estilo industrial" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Librero estilo industrial</h5>
+                            <span class="product-label d-inline-block mt-2">Libreros</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="libreros">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/libreros/lib6.png" class="card-img-top img-cover rounded-top" alt="Librero de madera con compartimentos" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Librero de madera con compartimentos</h5>
+                            <span class="product-label d-inline-block mt-2">Libreros</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CLOSETS -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="closets">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/closet/cl1.png" class="card-img-top img-cover rounded-top" alt="Closet de puertas oscuras" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Closet de puertas oscuras</h5>
+                            <span class="product-label d-inline-block mt-2">Closets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="closets">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/closet/cl2.png" class="card-img-top img-cover rounded-top" alt="Armario clásico de madera" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Armario clásico de madera</h5>
+                            <span class="product-label d-inline-block mt-2">Closets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="closets">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/closet/cl3.png" class="card-img-top img-cover rounded-top" alt="Closet de madera" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Closet de madera</h5>
+                            <span class="product-label d-inline-block mt-2">Closets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="closets">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/closet/cl4.png" class="card-img-top img-cover rounded-top" alt="Closet moderno oscuro" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Closet moderno oscuro</h5>
+                            <span class="product-label d-inline-block mt-2">Closets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="closets">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/closet/cl5.png" class="card-img-top img-cover rounded-top" alt="Closet modular blanco" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Closet modular blanco</h5>
+                            <span class="product-label d-inline-block mt-2">Closets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="closets">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/closet/cl6.png" class="card-img-top img-cover rounded-top" alt="Closet moderno gris" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Closet moderno gris</h5>
+                            <span class="product-label d-inline-block mt-2">Closets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COCINA -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="cocina">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblescocina/mc1.png" class="card-img-top img-cover rounded-top" alt="Mueble de cocina 1" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de cocina 1</h5>
+                            <span class="product-label d-inline-block mt-2">Cocina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="cocina">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblescocina/mc2.png" class="card-img-top img-cover rounded-top" alt="Mueble de cocina 2" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de cocina 2</h5>
+                            <span class="product-label d-inline-block mt-2">Cocina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="cocina">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblescocina/mc3.png" class="card-img-top img-cover rounded-top" alt="Mueble de cocina 3" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de cocina 3</h5>
+                            <span class="product-label d-inline-block mt-2">Cocina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="cocina">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblescocina/mc4.png" class="card-img-top img-cover rounded-top" alt="Mueble de cocina 4" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de cocina 4</h5>
+                            <span class="product-label d-inline-block mt-2">Cocina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="cocina">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblescocina/mc5.png" class="card-img-top img-cover rounded-top" alt="Mueble de cocina 5" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de cocina 5</h5>
+                            <span class="product-label d-inline-block mt-2">Cocina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="cocina">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblescocina/mc6.png" class="card-img-top img-cover rounded-top" alt="Mueble de cocina 6" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de cocina 6</h5>
+                            <span class="product-label d-inline-block mt-2">Cocina</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAÑO -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="bano">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblesbaño/mb1.png" class="card-img-top img-cover rounded-top" alt="Mueble de baño 1" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de baño 1</h5>
+                            <span class="product-label d-inline-block mt-2">Baño</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="bano">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblesbaño/mb2.png" class="card-img-top img-cover rounded-top" alt="Mueble de baño 2" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de baño 2</h5>
+                            <span class="product-label d-inline-block mt-2">Baño</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="bano">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblesbaño/mb3.png" class="card-img-top img-cover rounded-top" alt="Mueble de baño 3" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de baño 3</h5>
+                            <span class="product-label d-inline-block mt-2">Baño</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="bano">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblesbaño/mb4.png" class="card-img-top img-cover rounded-top" alt="Mueble de baño 4" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de baño 4</h5>
+                            <span class="product-label d-inline-block mt-2">Baño</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="bano">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblesbaño/mb5.png" class="card-img-top img-cover rounded-top" alt="Mueble de baño 5" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de baño 5</h5>
+                            <span class="product-label d-inline-block mt-2">Baño</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="bano">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblesbaño/mb6.png" class="card-img-top img-cover rounded-top" alt="Mueble de baño 6" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de baño 6</h5>
+                            <span class="product-label d-inline-block mt-2">Baño</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SALA -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sala">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblessala/ms1.png" class="card-img-top img-cover rounded-top" alt="Mueble de sala 1" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de sala 1</h5>
+                            <span class="product-label d-inline-block mt-2">Sala</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sala">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblessala/ms2.png" class="card-img-top img-cover rounded-top" alt="Mueble de sala 2" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de sala 2</h5>
+                            <span class="product-label d-inline-block mt-2">Sala</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sala">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblessala/ms3.png" class="card-img-top img-cover rounded-top" alt="Mueble de sala 3" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de sala 3</h5>
+                            <span class="product-label d-inline-block mt-2">Sala</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sala">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblessala/ms4.png" class="card-img-top img-cover rounded-top" alt="Mueble de sala 4" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de sala 4</h5>
+                            <span class="product-label d-inline-block mt-2">Sala</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sala">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblessala/ms5.png" class="card-img-top img-cover rounded-top" alt="Mueble de sala 5" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de sala 5</h5>
+                            <span class="product-label d-inline-block mt-2">Sala</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="sala">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblessala/ms6.png" class="card-img-top img-cover rounded-top" alt="Mueble de sala 6" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble de sala 6</h5>
+                            <span class="product-label d-inline-block mt-2">Sala</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ESCRITORIOS -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="escritorios">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/escritorios/e1.png" class="card-img-top img-cover rounded-top" alt="Escritorio 1" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Escritorio 1</h5>
+                            <span class="product-label d-inline-block mt-2">Escritorios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="escritorios">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/escritorios/e2.png" class="card-img-top img-cover rounded-top" alt="Escritorio 2" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Escritorio 2</h5>
+                            <span class="product-label d-inline-block mt-2">Escritorios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="escritorios">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/escritorios/e3.png" class="card-img-top img-cover rounded-top" alt="Escritorio 3" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Escritorio 3</h5>
+                            <span class="product-label d-inline-block mt-2">Escritorios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="escritorios">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/escritorios/e4.png" class="card-img-top img-cover rounded-top" alt="Escritorio 4" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Escritorio 4</h5>
+                            <span class="product-label d-inline-block mt-2">Escritorios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="escritorios">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/escritorios/e5.png" class="card-img-top img-cover rounded-top" alt="Escritorio 5" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Escritorio 5</h5>
+                            <span class="product-label d-inline-block mt-2">Escritorios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="escritorios">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/escritorios/e6.png" class="card-img-top img-cover rounded-top" alt="Escritorio 6" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Escritorio 6</h5>
+                            <span class="product-label d-inline-block mt-2">Escritorios</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MUEBLES PERSONALIZADOS -->
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="personalizados">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblespersonalisados/mp1.png" class="card-img-top img-cover rounded-top" alt="Mueble personalizado 1" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble personalizado 1</h5>
+                            <span class="product-label d-inline-block mt-2">Personalizados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="personalizados">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblespersonalisados/mp2.png" class="card-img-top img-cover rounded-top" alt="Mueble personalizado 2" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble personalizado 2</h5>
+                            <span class="product-label d-inline-block mt-2">Personalizados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="personalizados">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblespersonalisados/mp3.png" class="card-img-top img-cover rounded-top" alt="Mueble personalizado 3" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble personalizado 3</h5>
+                            <span class="product-label d-inline-block mt-2">Personalizados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="personalizados">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblespersonalisados/mp4.png" class="card-img-top img-cover rounded-top" alt="Mueble personalizado 4" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble personalizado 4</h5>
+                            <span class="product-label d-inline-block mt-2">Personalizados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="personalizados">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblespersonalisados/mp5.png" class="card-img-top img-cover rounded-top" alt="Mueble personalizado 5" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble personalizado 5</h5>
+                            <span class="product-label d-inline-block mt-2">Personalizados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 catalog-item" data-category="personalizados">
+                    <div class="card card-custom h-100 text-center border-0 shadow-sm">
+                        <img src="imgs/mueblespersonalisados/mp6.png" class="card-img-top img-cover rounded-top" alt="Mueble personalizado 6" style="height: 250px;">
+                        <div class="card-body bg-blanco">
+                            <h5 class="card-title text-primario fw-bold">Mueble personalizado 6</h5>
+                            <span class="product-label d-inline-block mt-2">Personalizados</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img src="imgs/logo.png" alt="Logo Muebles Keyda" height="60" class="mb-3 bg-white rounded p-1">
+                    <p class="small">Diseño que transforma espacios.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <ul class="list-unstyled small">
+                        <li>Email: contacto@muebleskeyda.com</li>
+                        <li>Tel: +503 2222-3333</li>
+                        <li>Dirección: Av. Los Cocos, San Salvador</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3 pt-3 border-top border-secondary">
+                <small>&copy; 2026 Muebles Keyda. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
