@@ -41,8 +41,8 @@
         <section class="hero-section" style="background-image: url('imgs/Main.png'); padding: 150px 0;">
             <div class="hero-overlay"></div>
             <div class="container hero-content py-5">
-                <p class="text-secundario fw-bold mb-2 tracking-wide" style="letter-spacing: 2px;">MUEBLES KEYDA</p>
-                <h1 class="display-3 fw-bold mb-4">Diseño que transforma <span class="text-secundario">espacios.</span></h1>
+                <p class="text-secundario fw-bold mb-2 tracking-wide font-inter" style="letter-spacing: 2px;">MUEBLES KEYDA</p>
+                <h1 class="display-3 fw-bold mb-4 font-inter">Diseño que transforma <span class="text-secundario">espacios.</span></h1>
                 <p class="lead mb-4 mx-auto" style="max-width: 800px;">Creamos muebles personalizados que combinan diseño, calidad y funcionalidad para convertir cada espacio en un lugar único.</p>
                 <div class="d-flex justify-content-center gap-3">
                     <a href="catalogo.html" class="btn btn-secondary-custom btn-lg">Explorar catálogo</a>
@@ -53,67 +53,56 @@
 
         <!-- Descubre nuestra colección -->
         <section class="bg-beige py-5">
-            <div class="container">
-                <h2 class="text-center text-primario mb-5 fw-bold">Descubre nuestra colección</h2>
-                <div class="row g-4">
+            <div class="container text-center py-4">
+                <h2 class="text-primario mb-5 fw-bold font-inter" style="font-size: 2.5rem;">Descubre nuestra colección</h2>
+                <div class="row g-5 mt-2">
                     <!-- Categoría 1 -->
                     <div class="col-md-4">
-                        <div class="card card-custom h-100 text-center">
-                            <img src="imgs/mueblesestiloartesanal.png" class="card-img-top img-cover" alt="Muebles estilo artesanal" style="height: 250px;">
-                            <div class="card-body">
-                                <h3 class="card-title text-primario fs-5">Muebles estilo artesanal</h3>
-                                <a href="catalogo.html" class="btn btn-primary-custom mt-3">Ver más</a>
-                            </div>
-                        </div>
+                        <h3 class="text-primario fw-bold mb-4 font-inter" style="font-size: 1.5rem;">Muebles estilo<br>artesanal</h3>
+                        <img src="imgs/mueblesestiloartesanal.png" class="img-fluid img-cover shadow-sm" alt="Muebles estilo artesanal" style="height: 300px; width: 100%; border-radius: 90px 90px 90px 90px;">
                     </div>
                     <!-- Categoría 2 -->
                     <div class="col-md-4">
-                        <div class="card card-custom h-100 text-center">
-                            <img src="imgs/mueblesestiloextravagante.png" class="card-img-top img-cover" alt="Muebles estilo extravagante" style="height: 250px;">
-                            <div class="card-body">
-                                <h3 class="card-title text-primario fs-5">Muebles estilo extravagante</h3>
-                                <a href="catalogo.html" class="btn btn-primary-custom mt-3">Ver más</a>
-                            </div>
-                        </div>
+                        <h3 class="text-primario fw-bold mb-4 font-inter" style="font-size: 1.5rem;">Muebles estilo<br>extravagante</h3>
+                        <img src="imgs/mueblesestiloextravagante.png" class="img-fluid img-cover shadow-sm" alt="Muebles estilo extravagante" style="height: 300px; width: 100%; border-radius: 90px 90px 90px 90px;">
                     </div>
                     <!-- Categoría 3 -->
                     <div class="col-md-4">
-                        <div class="card card-custom h-100 text-center">
-                            <img src="imgs/mueblesestilomoderno.png" class="card-img-top img-cover" alt="Muebles estilo moderno" style="height: 250px;">
-                            <div class="card-body">
-                                <h3 class="card-title text-primario fs-5">Muebles estilo moderno</h3>
-                                <a href="catalogo.html" class="btn btn-primary-custom mt-3">Ver más</a>
-                            </div>
-                        </div>
+                        <h3 class="text-primario fw-bold mb-4 font-inter" style="font-size: 1.5rem;">Muebles estilo<br>moderno</h3>
+                        <img src="imgs/mueblesestilomoderno.png" class="img-fluid img-cover shadow-sm" alt="Muebles estilo moderno" style="height: 300px; width: 100%; border-radius: 90px 90px 90px 90px;">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ¿Quiénes somos? -->
-        <section class="bg-crema py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="imgs/sillonquienessomos.png" alt="Sillón de muestra" class="img-fluid rounded-custom w-100 img-cover" style="height: 500px; border: 2px solid var(--color-secundario);">
-                    </div>
-                    <div class="col-md-6 px-lg-5">
+        <section class="bg-crema p-0">
+            <div class="row g-0 align-items-stretch">
+                <!-- Imagen ocupando la mitad exacta sin padding -->
+                <div class="col-md-6">
+                    <img src="imgs/sillonquienessomos.png" alt="Sillón de muestra" class="w-100 h-100 img-cover" style="min-height: 500px; object-position: left center;">
+                </div>
+                <!-- Texto a la derecha -->
+                <div class="col-md-6 d-flex flex-column justify-content-center p-5">
+                    <div style="max-width: 600px; padding: 2rem;">
                         <p class="text-primario fw-bold mb-2 fs-5" style="letter-spacing: 1px;">CONOCE MÁS SOBRE NOSOTROS</p>
-                        <h2 class="text-primario fw-bold mb-4 font-poppins" style="font-size: 4rem; line-height: 1;">¿Quiénes<br>somos?</h2>
+                        <h2 class="text-primario fw-bold mb-4 font-poppins" style="font-size: 4.5rem; line-height: 0.9;">¿Quiénes<br>somos?</h2>
                         <p class="text-texto fs-5 mb-4">En <strong class="text-primario">Muebles Keyda</strong> creemos que un mueble es mucho más que un objeto funcional; es la pieza que transforma una casa en un verdadero hogar y una oficina en un espacio de inspiración.</p>
-                        <p class="text-texto fs-5 mb-4">Nos especializamos en el diseño, fabricación y comercialización de muebles personalizados, ofreciendo soluciones que combinan calidad, innovación y acabados profesionales.</p>
-                        <a href="nosotros.html" class="btn btn-primary-custom btn-lg font-outfit fw-bold px-4" style="border-radius: 25px;">Conocer Más</a>
+                        <p class="text-texto fs-5 mb-5">Nos especializamos en el diseño, fabricación y comercialización de muebles personalizados, ofreciendo soluciones que combinan calidad, innovación y acabados profesionales.</p>
+                        <div>
+                            <a href="nosotros.html" class="btn btn-primary-custom btn-lg font-outfit fw-bold px-5 py-3" style="border-radius: 30px; background-color: var(--color-secundario);">Conocer Más</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA final -->
-        <section class="bg-secundario py-5 text-center text-white">
+        <section class="py-5 text-center" style="background-color: var(--color-secundario); color: var(--color-beige); padding: 80px 0 !important;">
             <div class="container">
-                <h2 class="fw-bold mb-3">¿Listo para transformar tu hogar?</h2>
-                <p class="lead mb-4">Contáctanos y hagamos realidad el mueble de tus sueños.</p>
-                <a href="cotizaciones.html" class="btn btn-secondary-custom btn-lg" style="background-color: var(--color-blanco); color: var(--color-secundario); border: 2px solid var(--color-blanco);">Solicitar cotización</a>
+                <h2 class="fw-bold mb-4 font-inter" style="font-size: 3rem;">¿Listo para transformar tu hogar?</h2>
+                <p class="lead mb-5 mx-auto font-inter fs-4" style="max-width: 900px;">Creamos muebles personalizados que se adaptan a tu estilo, necesidades y espacios.</p>
+                <a href="cotizaciones.html" class="btn fw-bold px-5 py-3 font-inter rounded-pill" style="background-color: #c99368; color: #fff; font-size: 1.2rem;">Solicitar Cotización</a>
             </div>
         </section>
     </main>
