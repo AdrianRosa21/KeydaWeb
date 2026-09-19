@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -38,15 +38,15 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-section" style="background-image: url('imgs/Main.png'); padding: 150px 0;">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content py-5">
-                <p class="text-secundario fw-bold mb-2 tracking-wide font-inter" style="letter-spacing: 2px;">MUEBLES KEYDA</p>
-                <h1 class="display-3 fw-bold mb-4 font-inter">Diseño que transforma <span class="text-secundario">espacios.</span></h1>
-                <p class="lead mb-4 mx-auto" style="max-width: 800px;">Creamos muebles personalizados que combinan diseño, calidad y funcionalidad para convertir cada espacio en un lugar único.</p>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="catalogo.html" class="btn btn-secondary-custom btn-lg">Explorar catálogo</a>
-                    <a href="cotizaciones.html" class="btn btn-primary-custom btn-lg" style="background-color: var(--color-secundario); color: var(--color-blanco); opacity: 0.9;">Solicitar cotización</a>
+        <section class="hero-section" style="background-image: url('imgs/Main.png'); min-height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 100px;">
+            <div class="hero-overlay" style="background-color: rgba(0,0,0,0.15);"></div>
+            <div class="container hero-content text-center" style="z-index: 2; position: relative;">
+                <p class="text-secundario fw-bold mb-3 tracking-wide font-inter" style="letter-spacing: 2px;">MUEBLES KEYDA</p>
+                <h1 class="display-3 fw-bold mb-4 font-inter text-white">Diseño que transforma <span class="text-secundario">espacios.</span></h1>
+                <p class="lead mb-5 mx-auto text-white" style="max-width: 800px;">Creamos muebles personalizados que combinan diseño, calidad y funcionalidad para convertir cada espacio en un lugar único.</p>
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="catalogo.html" class="btn btn-lg rounded-pill px-4 fw-bold font-inter text-white" style="background-color: #A65E32; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">Explorar catálogo</a>
+                    <a href="cotizaciones.html" class="btn btn-lg rounded-pill px-4 fw-bold font-inter text-white" style="background-color: #D5965B; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">Solicitar cotización</a>
                 </div>
             </div>
         </section>
@@ -59,17 +59,92 @@
                     <!-- Categoría 1 -->
                     <div class="col-md-4">
                         <h3 class="text-primario fw-bold mb-4 font-inter" style="font-size: 1.5rem;">Muebles estilo<br>artesanal</h3>
-                        <img src="imgs/mueblesestiloartesanal.png" class="img-fluid img-cover shadow-sm" alt="Muebles estilo artesanal" style="height: 300px; width: 100%; border-radius: 90px 90px 90px 90px;">
+                        <div id="carouselArtesanal" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselArtesanal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselArtesanal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselArtesanal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imgs/mueblesestiloartesanal.png" class="d-block w-100 img-cover" style="height: 300px;" alt="Artesanal 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/mueblesestiloartesanal.png" class="d-block w-100 img-cover" style="height: 300px; filter: grayscale(30%);" alt="Artesanal 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/mueblesestiloartesanal.png" class="d-block w-100 img-cover" style="height: 300px; filter: grayscale(60%);" alt="Artesanal 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselArtesanal" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselArtesanal" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
                     </div>
                     <!-- Categoría 2 -->
                     <div class="col-md-4">
                         <h3 class="text-primario fw-bold mb-4 font-inter" style="font-size: 1.5rem;">Muebles estilo<br>extravagante</h3>
-                        <img src="imgs/mueblesestiloextravagante.png" class="img-fluid img-cover shadow-sm" alt="Muebles estilo extravagante" style="height: 300px; width: 100%; border-radius: 90px 90px 90px 90px;">
+                        <div id="carouselExtravagante" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExtravagante" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExtravagante" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExtravagante" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imgs/mueblesestiloextravagante.png" class="d-block w-100 img-cover" style="height: 300px;" alt="Extravagante 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/mueblesestiloextravagante.png" class="d-block w-100 img-cover" style="height: 300px; filter: grayscale(30%);" alt="Extravagante 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/mueblesestiloextravagante.png" class="d-block w-100 img-cover" style="height: 300px; filter: grayscale(60%);" alt="Extravagante 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExtravagante" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExtravagante" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
                     </div>
                     <!-- Categoría 3 -->
                     <div class="col-md-4">
                         <h3 class="text-primario fw-bold mb-4 font-inter" style="font-size: 1.5rem;">Muebles estilo<br>moderno</h3>
-                        <img src="imgs/mueblesestilomoderno.png" class="img-fluid img-cover shadow-sm" alt="Muebles estilo moderno" style="height: 300px; width: 100%; border-radius: 90px 90px 90px 90px;">
+                        <div id="carouselModerno" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselModerno" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselModerno" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselModerno" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imgs/mueblesestilomoderno.png" class="d-block w-100 img-cover" style="height: 300px;" alt="Moderno 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/mueblesestilomoderno.png" class="d-block w-100 img-cover" style="height: 300px; filter: grayscale(30%);" alt="Moderno 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/mueblesestilomoderno.png" class="d-block w-100 img-cover" style="height: 300px; filter: grayscale(60%);" alt="Moderno 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModerno" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselModerno" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,5 +219,6 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
