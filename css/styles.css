@@ -151,45 +151,16 @@ footer a:hover {
     width: 100%;
 }
 
-/* Responsive Hero Typography (Reactivo y Super Grande) */
+/* Responsive Hero Typography (Fluido y Estético) */
 .hero-title-responsive {
-    /* Celulares */
-    font-size: 4.5rem;
-    line-height: 1.05;
+    /* Se adapta suavemente entre 3rem (móvil) y 5.5rem (escritorio) */
+    font-size: clamp(3rem, 5vw + 1rem, 5.5rem);
+    line-height: 1.1;
 }
 .hero-subtitle-responsive {
-    /* Celulares */
-    font-size: 1.5rem;
+    /* Se adapta suavemente entre 1.1rem y 1.5rem */
+    font-size: clamp(1.1rem, 2vw + 0.5rem, 1.5rem);
 }
 
-@media (min-width: 768px) {
-    /* Tablets */
-    .hero-title-responsive {
-        font-size: 7rem;
-    }
-    .hero-subtitle-responsive {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 992px) {
-    /* Laptops y pantallas normales */
-    .hero-title-responsive {
-        font-size: 9rem;
-    }
-    .hero-subtitle-responsive {
-        font-size: 2.4rem;
-    }
-}
-
-@media (min-width: 1400px) {
-    /* Monitores SUPER grandes */
-    .hero-title-responsive {
-        font-size: 11rem;
-    }
-    .hero-subtitle-responsive {
-        font-size: 2.8rem;
-    }
-}
 
 
