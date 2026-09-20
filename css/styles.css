@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;700&family=Outfit:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;700&family=Outfit:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 
 :root {
     --color-primario: #693A25;
@@ -150,3 +150,46 @@ footer a:hover {
     object-fit: cover;
     width: 100%;
 }
+
+/* Responsive Hero Typography (Reactivo y Super Grande) */
+.hero-title-responsive {
+    /* Celulares */
+    font-size: 4.5rem;
+    line-height: 1.05;
+}
+.hero-subtitle-responsive {
+    /* Celulares */
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    /* Tablets */
+    .hero-title-responsive {
+        font-size: 7rem;
+    }
+    .hero-subtitle-responsive {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Laptops y pantallas normales */
+    .hero-title-responsive {
+        font-size: 9rem;
+    }
+    .hero-subtitle-responsive {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    /* Monitores SUPER grandes */
+    .hero-title-responsive {
+        font-size: 11rem;
+    }
+    .hero-subtitle-responsive {
+        font-size: 2.8rem;
+    }
+}
+
+
