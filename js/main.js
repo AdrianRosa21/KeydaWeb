@@ -1,4 +1,4 @@
-// Funcionalidad para Catálogo y Comunes
+﻿// Funcionalidad para Catálogo y Comunes
 document.addEventListener('DOMContentLoaded', () => {
     
     // Filtrado de Catálogo
@@ -30,24 +30,62 @@ document.addEventListener('DOMContentLoaded', () => {
     // Validación de formulario de Contacto / Cotizaciones
     const forms = document.querySelectorAll('.needs-validation');
     Array.prototype.slice.call(forms).forEach(function (form) {
+        
+        // Validación personalizada para correos y descripciones
+        const emailInputs = form.querySelectorAll('input[type="email"]');
+        const descInputs = form.querySelectorAll('textarea[name="descripcion"]');
+        
+        emailInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(this.value)) {
+                    this.setCustomValidity('Por favor ingrese un correo válido.');
+                    const feedback = this.nextElementSibling;
+                    if (feedback && feedback.classList.contains('invalid-feedback')) {
+                        feedback.textContent = 'Debe ser un correo electrónico válido (ej: nombre@dominio.com).';
+                    }
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+        });
+
+        descInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                if (this.value.trim().length < 15) {
+                    this.setCustomValidity('Descripción muy corta.');
+                    const feedback = this.nextElementSibling;
+                    if (feedback && feedback.classList.contains('invalid-feedback')) {
+                        feedback.textContent = 'Bríndanos un poco más de detalles (mínimo 15 caracteres) para ayudarte mejor.';
+                    }
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+        });
+
         form.addEventListener('submit', function (event) {
+            
+            // Forzar revisión manual antes del envío
+            emailInputs.forEach(i => i.dispatchEvent(new Event('input')));
+            descInputs.forEach(i => i.dispatchEvent(new Event('input')));
+
             if (!form.checkValidity()) {
                 event.preventDefault();
                 event.stopPropagation();
             } else {
-                // If it's the contact form and validation passes, we simulate mailto
                 if (form.id === 'contactForm' || form.id === 'cotizacionForm') {
                     event.preventDefault();
                     // Generate mailto link
                     const formData = new FormData(form);
                     let bodyText = '';
-                    let subject = form.querySelector('[name="asunto"]') ? form.querySelector('[name="asunto"]').value : 'Solicitud desde sitio web';
+                    let subject = form.querySelector('[name="asunto"]') ? form.querySelector('[name="asunto"]').value : (form.id === 'cotizacionForm' ? 'Nueva solicitud de cotización' : 'Solicitud desde sitio web');
                     
                     for (let [key, value] of formData.entries()) {
-                        bodyText += `${key.toUpperCase()}: ${value}\n`;
+                        bodyText += key.toUpperCase() + ': ' + value + '\n';
                     }
                     
-                    const mailtoLink = `mailto:contacto@muebleskeyda.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+                    const mailtoLink = 'mailto:muebleskeydasv@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(bodyText);
                     window.location.href = mailtoLink;
                     alert('Se abrirá su cliente de correo para enviar el mensaje.');
                 }
