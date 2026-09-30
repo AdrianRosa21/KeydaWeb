@@ -21,6 +21,7 @@ KeydaWeb/
 ├── galeria.html        # Galería de proyectos
 ├── cotizaciones.html   # Formulario de cotizaciones
 ├── descarga.html       # Descarga del sistema y requisitos
+├── descargas/          # Documentos descargables (manuales en PDF)
 ├── contacto.html       # Información de contacto y mapa
 ├── css/
 │   └── styles.css      # Hoja de estilos personalizados
@@ -37,12 +38,13 @@ KeydaWeb/
 - **Mapa interactivo:** Ubicación real incrustada en la página de Contacto mediante un Iframe de Google Maps.
 - **Identidad Visual Consistente:** Paleta de colores aplicada a lo largo de todo el sitio usando variables CSS.
 
-## Recursos Pendientes (A proveer por el equipo técnico)
-En la página de **Descarga**, los siguientes archivos no se encuentran en el proyecto y los enlaces están deshabilitados temporalmente:
-- `Instalador del Sistema de Gestión (.exe)`
-- `Manual del Usuario (.pdf)`
-- `Manual Técnico (.pdf)`
-- `Especificaciones Técnicas exactas del equipo requerido`
+## Descargas del Sistema de Gestión
+La página de **Descarga** enlaza a los archivos del sistema:
+- **Instalador (.exe):** se publica como *Release* en [AdrianRosa21/keydaApp](https://github.com/AdrianRosa21/keydaApp/releases). El botón apunta siempre a la última versión (`releases/latest/download/MueblesKeydaSetup.exe`), así que basta con publicar una nueva release para actualizarlo.
+- **Manual Técnico (.pdf):** `descargas/Manual-Tecnico-Muebles-Keyda.pdf`.
+
+Pendiente:
+- `Manual del Usuario (.pdf)`: el botón aparece como "Próximamente". Al tener el PDF, guardarlo en `descargas/` y cambiar el botón por un enlace de descarga en `descarga.html`.
 
 ## Ejecución Local
 Al ser un proyecto de tipo sitio web estático puro, solo necesitas un navegador web:

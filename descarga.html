@@ -52,7 +52,8 @@
                             <p class="font-manrope fs-6 mb-4 text-texto" style="max-width: 500px;">
                                 Descarga nuestro sistema de gestión de escritorio y consulta la documentación necesaria para su instalación, configuración y uso.
                             </p>
-                            <button class="btn btn-outline-dark font-inter fw-bold px-4 py-2" style="border-radius: 5px;">Descargar sistema</button>
+                            <a href="https://github.com/AdrianRosa21/keydaApp/releases/latest/download/MueblesKeydaSetup.exe" class="btn btn-outline-dark font-inter fw-bold px-4 py-2" style="border-radius: 5px;" download><i class="bi bi-download me-2"></i>Descargar sistema</a>
+                            <p class="small text-muted font-manrope mt-3 mb-0">Versión 1.0.0 &middot; Windows 10/11 (64 bits) &middot; 33 MB</p>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -139,9 +140,9 @@
                             <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>Procesador:</strong> Intel Core i3 o equivalente</li>
                             <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>Memoria RAM:</strong> 4 GB mínimo</li>
                             <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>Espacio en disco:</strong> 500 MB disponibles</li>
-                            <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>.NET Framework:</strong> 4.8</li>
-                            <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>Base de datos:</strong> SQL Server</li>
-                            <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>Conexión a Internet:</strong> Requerida si la base de datos está en servidor remoto</li>
+                            <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>.NET Framework:</strong> 4.7.2 o superior (incluido en Windows 10/11 actualizado)</li>
+                            <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>Base de datos:</strong> SQL Server Express LocalDB (el instalador la descarga e instala si no la tienes)</li>
+                            <li class="mb-3"><i class="bi bi-check-circle text-secundario me-2"></i><strong>Conexión a Internet:</strong> Solo durante la instalación, si hace falta descargar LocalDB (aprox. 60 MB)</li>
                         </ul>
                     </div>
                     <!-- Archivos disponibles -->
@@ -155,7 +156,7 @@
                                         <h6 class="fw-bold text-primario font-inter small">Sistema de Gestión</h6>
                                         <p class="text-muted" style="font-size: 0.75rem;">Descarga e instalación del sistema principal</p>
                                     </div>
-                                    <button class="btn btn-sm text-white mt-2 font-inter rounded-pill w-100" style="background-color: #A65E32;"><i class="bi bi-download me-1"></i> Descargar</button>
+                                    <a href="https://github.com/AdrianRosa21/keydaApp/releases/latest/download/MueblesKeydaSetup.exe" class="btn btn-sm text-white mt-2 font-inter rounded-pill w-100" style="background-color: #A65E32;" download><i class="bi bi-download me-1"></i> Descargar</a>
                                 </div>
                             </div>
                             <div class="col-sm-4 text-center">
@@ -165,7 +166,7 @@
                                         <h6 class="fw-bold text-primario font-inter small">Manual de Usuario</h6>
                                         <p class="text-muted" style="font-size: 0.75rem;">Guía para utilizar todas las funciones del sistema</p>
                                     </div>
-                                    <button class="btn btn-sm text-white mt-2 font-inter rounded-pill w-100" style="background-color: #A65E32;"><i class="bi bi-download me-1"></i> Descargar</button>
+                                    <button class="btn btn-sm text-white mt-2 font-inter rounded-pill w-100" style="background-color: #A65E32;" disabled><i class="bi bi-hourglass-split me-1"></i> Próximamente</button>
                                 </div>
                             </div>
                             <div class="col-sm-4 text-center">
@@ -175,7 +176,7 @@
                                         <h6 class="fw-bold text-primario font-inter small">Manual Técnico</h6>
                                         <p class="text-muted" style="font-size: 0.75rem;">Documentación técnica sobre configuración y arquitectura</p>
                                     </div>
-                                    <button class="btn btn-sm text-white mt-2 font-inter rounded-pill w-100" style="background-color: #A65E32;"><i class="bi bi-download me-1"></i> Descargar</button>
+                                    <a href="descargas/Manual-Tecnico-Muebles-Keyda.pdf" class="btn btn-sm text-white mt-2 font-inter rounded-pill w-100" style="background-color: #A65E32;" download><i class="bi bi-download me-1"></i> Descargar</a>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +203,7 @@
                             <div class="bg-secundario text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 40px; height: 40px; font-weight: bold;">02</div>
                             <i class="bi bi-play d-block text-secundario fs-3 mb-2"></i>
                             <h6 class="fw-bold font-inter text-primario small">Ejecutar</h6>
-                            <p class="text-muted mb-0 lh-sm" style="font-size: 0.75rem;">Abre el archivo de instalación</p>
+                            <p class="text-muted mb-0 lh-sm" style="font-size: 0.75rem;">Abre MueblesKeydaSetup.exe y acepta el permiso de administrador</p>
                         </div>
                     </div>
                     <div class="col">
@@ -210,7 +211,7 @@
                             <div class="bg-secundario text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 40px; height: 40px; font-weight: bold;">03</div>
                             <i class="bi bi-layers d-block text-secundario fs-3 mb-2"></i>
                             <h6 class="fw-bold font-inter text-primario small">Instalar</h6>
-                            <p class="text-muted mb-0 lh-sm" style="font-size: 0.75rem;">Sigue los pasos del instalador</p>
+                            <p class="text-muted mb-0 lh-sm" style="font-size: 0.75rem;">Sigue el asistente; se crea un acceso directo en tu escritorio</p>
                         </div>
                     </div>
                     <div class="col">
@@ -218,7 +219,7 @@
                             <div class="bg-secundario text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 40px; height: 40px; font-weight: bold;">04</div>
                             <i class="bi bi-sliders text-secundario d-block fs-3 mb-2"></i>
                             <h6 class="fw-bold font-inter text-primario small">Configurar</h6>
-                            <p class="text-muted mb-0 lh-sm" style="font-size: 0.75rem;">Realiza la configuración de conexión y base de datos</p>
+                            <p class="text-muted mb-0 lh-sm" style="font-size: 0.75rem;">Al abrir el sistema, crea la base de datos y tu usuario administrador</p>
                         </div>
                     </div>
                     <div class="col">
@@ -230,6 +231,9 @@
                         </div>
                     </div>
                 </div>
+                <p class="text-center text-white small font-manrope mt-4 mb-0">
+                    <i class="bi bi-shield-exclamation me-1"></i>Si Windows muestra “Windows protegió su PC”, pulsa <strong>Más información</strong> y luego <strong>Ejecutar de todas formas</strong>: el instalador aún no cuenta con firma digital.
+                </p>
             </div>
         </section>
     </main>
