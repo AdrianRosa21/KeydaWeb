@@ -41,10 +41,10 @@ KeydaWeb/
 ## Descargas del Sistema de Gestión
 La página de **Descarga** enlaza a los archivos del sistema:
 - **Instalador (.exe):** se publica como *Release* en [AdrianRosa21/keydaApp](https://github.com/AdrianRosa21/keydaApp/releases). El botón apunta siempre a la última versión (`releases/latest/download/MueblesKeydaSetup.exe`), así que basta con publicar una nueva release para actualizarlo.
+- **Manual de Usuario (.pdf):** `descargas/Manual-Usuario-Muebles-Keyda.pdf`.
 - **Manual Técnico (.pdf):** `descargas/Manual-Tecnico-Muebles-Keyda.pdf`.
 
-Pendiente:
-- `Manual del Usuario (.pdf)`: el botón aparece como "Próximamente". Al tener el PDF, guardarlo en `descargas/` y cambiar el botón por un enlace de descarga en `descarga.html`.
+Los manuales se mantienen como Word en el repositorio de la aplicación (`docs/`); al actualizarlos se exportan a PDF y se reemplazan aquí.
 
 ## Ejecución Local
 Al ser un proyecto de tipo sitio web estático puro, solo necesitas un navegador web:
